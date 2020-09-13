@@ -169,12 +169,16 @@ numpy.array([list1])
 import numpy as np #np is alias
 np1 = np.arange(1,10)
 np1
-
+np2 = np.arange(50,101)
+np2
+np.arange?
 x=np.arange(start=1,stop=1000000,step=2)
+x
 len(x)
 x[1:100]
-x[1:50:10]
-np
+x[1:50:5]
+np?
+np.mean(x[0:100])
 np.mean(np.arange(1,10000000))
 np1
 type(np1)
@@ -185,13 +189,15 @@ np.mean?  # help on mean function of numpy
 
 np2 = np.array([ 90, 50, 60, 70 ])
 np2
-np.sort(np2)
+np.sort?
+np.sort(np2)[::-1]
 dir(np)
 
-np3 = np.array([[1,4],[3,1],[5,6],[10,50]])
+np3 = np.array([[1,4],[3,1],[5,6],[10,50]
 np3
 np3.shape
-
+np4 = np.array([["a","b"],["y","vineet"]],dtype='str' )
+np4
 np3.reshape((-1,1))  #1 column from 2 column
 
 #http://cs231n.github.io/python-numpy-tutorial/
@@ -272,7 +278,7 @@ data2a
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
 data2b
-data2b = pd.read_csv('E:/analytics/projects/pyanalytics/mtcars.csv')
+data2b = pd.read_csv('D:/analytics/projects/pyanalytics/mtcars.csv')
 data2b
 #csv in any other location - full path
 data2b
