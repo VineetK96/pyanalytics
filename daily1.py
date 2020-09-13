@@ -15,11 +15,26 @@ len(list2)
 dir(list)
 dir(tuple)
 dir(list) #functions which can be operated on list of DS
+
 sorted(list2)
 list2[2]
 list2[2] = 'Z'  #list is mutable, ie. values can be changed
+
 list2
 #%%mutatble - changed, immutable- cannot be changed
+
+
+
+
+
+
+
+
+
+
+
+
+
 #tuple - multiple type of objects like list, immutable: ( round brackets) : no changes
 tuple1 = (1, 2, 'a', 'b')
 tuple1
