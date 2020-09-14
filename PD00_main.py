@@ -110,7 +110,7 @@ mtcars[mtcarsDF['gear'] != 3, ['gear','am']]
 #another way
 mtcarsDF[mtcarsDF.gear.eq(3)]  #chaining method
 
-mtcarsDF[mtcarsDF['gear'] == 3 & mtcarsDF['am']== 0]
+mtcarsDF[mtcarsDF['gear'] == 3 & mtcarsDF['am']== 0] # INVALID
 
 mtcarsDF.gear.unique()
 mtcarsDF.carb.unique()
@@ -126,6 +126,12 @@ mtcarsDF[~ mtcarsDF.gear.isin(gears)] #cars of not gear(4,5)
 carbs = [1,3]
 mtcarsDF[mtcarsDF.gear.isin(gears) & mtcarsDF.carb.isin(carbs) ]
 mtcarsDF[~ mtcarsDF.gear.isin(gears) & mtcarsDF.carb.isin(carbs) ]
+
+
+
+
+
+
 
 #query function
 mtcarsDF.query('gear==4')
