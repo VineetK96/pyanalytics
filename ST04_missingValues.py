@@ -14,13 +14,16 @@ df
 #na is not missing, it is a text
 df.head()
 df.describe(include='all')
+df.describe()
+df.dtypes
+dir(df)
 #
 #ST_NUM: Street number
 #ST_NAME: Street name
 #OWN_OCCUPIED: Is the residence owner occupied
 #NUM_BEDROOMS: Number of bedrooms
 
-
+df.head()
 #better values could be
 #ST_NUM: float or int… some sort of numeric type
 #ST_NAME: string
@@ -40,11 +43,12 @@ df['NUM_BEDROOMS'].isnull()
 df['NUM_BEDROOMS']   #2. 5. 8 are missing, but 8 is not showing
 df.NUM_BEDROOMS.value_counts()
 np.mean(df.NUM_BEDROOMS)
-
 #we can specify at the time of import as which type of values to mark missing
 # Making a list of missing value types
 missing_values = ["n/a", "na", "--"]
+type(missing_values)
 df2 = pd.read_csv(url, na_values = missing_values)
+pd.read_csv?
 df2
 df
 df['NUM_BEDROOMS'].isnull().sum()
@@ -80,7 +84,7 @@ df2
 df2.dropna(axis=1) #remove col having missing values
 df2.dropna(axis=0) #remove rows having missing values
 df2
-df2.dropna(axis=0,thresh=1, subset=None, inplace=False) #threshold
+df2.dropna(axis=0,thresh=120, subset=None, inplace=False) #threshold
 
 #https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b
 #https://thispointer.com/pandas-drop-rows-from-a-dataframe-with-missing-values-or-nan-in-columns/
