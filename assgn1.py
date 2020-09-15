@@ -1,3 +1,14 @@
+#Topic ---- Case Study - Denco - Manufacturing Firm
+#%%case details
+#%%Objective
+#Expand Business by encouraging loyal customers to Improve repeated sales
+#Maximise revenue from high value parts
+#%%Information Required
+#Who are the most loyal Customers - Improve repeated sales, Target customers with low sales Volumes
+#Which customers contribute the most to their revenue - How do I retain these customers & target incentives
+#What part numbers bring in to significant portion of revenue - Maximise revenue from high value parts
+#What parts have the highest profit margin - What parts are driving profits & what parts need to build further
+#%%%
 import numpy as np
 import pandas as pd
 #pandas DF are combination of panda Series..

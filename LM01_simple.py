@@ -6,7 +6,6 @@
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-
 #S2 - data
 x = np.array([5,15,25,35,45,55]).reshape((-1,1))  #making 2 dim
 x  #IV
@@ -27,7 +26,7 @@ model.intercept_  #bo
 model.coef_  #b1
 y = 5.6 + .54 * x  #mathematical equation
 #if x is increased by 1 units, y increased by .54 units; when x=0, y=5.6 (constant value)
-
+5.6+0.54*5
 
 #S5 Predict
 y_pred = model.predict(x)  #predict on trained data 
@@ -78,6 +77,10 @@ y_new
 
 
 
+
+
+
+
 #%% Stats Models
 
 import numpy as np
@@ -89,6 +92,7 @@ x
 y = [4,5,20,14,32,22,38,43]
 y
 
+
 x= sm.add_constant(x)  #constant term of 1 added
 x
 model3 = sm.OLS(y,x)
@@ -96,12 +100,16 @@ model3
 results = model3.fit()
 results
 results.summary()
+
+
 results.rsquared  #coeff of determination
 results.rsquared_adj 
 results.params  #bo, b1, b2
 
+
 results.fittedvalues
 results.predict(x)
+
 
 
 #%%AIC & BIC  
