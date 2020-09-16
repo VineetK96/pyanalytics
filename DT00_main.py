@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import os
-os.listdir('E:/analytics/projects/pyanalytics/data') #change the folder to see what are the file in folder
+os.listdir('D:/analytics/projects/pyanalytics') #change the folder to see what are the file in folder
 #dataset
 #data = pd.read_csv('E:/analytics/projects/pyanalytics/data/bill_authentication.csv')
 data = pd.read_csv('https://raw.githubusercontent.com/DUanalytics/pyAnalytics/master/data/bill_authentication.csv')
@@ -30,8 +30,8 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.20)
 X_train.shape
 X_test.shape
-275/data.shape[0]
-
+275/data.shape[0] # verification
+data.shape
 #model
 from sklearn.tree import DecisionTreeClassifier
 clsModel = DecisionTreeClassifier()  #model with parameter
@@ -88,7 +88,7 @@ y2= data2['Petrol_Consumption']
 X2
 y2
 y2.mean()
-
+    
 #split data
 from sklearn.model_selection import train_test_split
 X2_train, X2_test, y2_train, y2_test = train_test_split(X2, y2, test_size=.20, random_state=123 )
